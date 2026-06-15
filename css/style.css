@@ -1,83 +1,157 @@
-* {
+*{
 
-    margin: 0;
+    margin:0;
 
-    padding: 0;
+    padding:0;
 
-    box-sizing: border-box;
-
-}
-
-body {
-
-    background: #111;
-
-    color: white;
-
-    font-family: Arial, sans-serif;
+    box-sizing:border-box;
 
 }
 
-header {
+body{
 
-    text-align: center;
+    font-family:Arial,sans-serif;
 
-    padding: 60px 20px;
+    background:#0b0b0b;
 
-}
-
-.logo {
-
-    width: 140px;
-
-    margin-bottom: 20px;
+    color:white;
 
 }
 
-h1 {
+.hero{
 
-    font-size: 4rem;
+    position:relative;
 
-}
+    height:100vh;
 
-header p {
+    display:flex;
 
-    color: #aaa;
+    justify-content:center;
 
-}
+    align-items:center;
 
-section {
+    text-align:center;
 
-    max-width: 1000px;
+    background:
 
-    margin: 40px auto;
+        linear-gradient(
 
-    padding: 25px;
+            rgba(0,0,0,.7),
 
-    background: #1b1b1b;
+            rgba(0,0,0,.7)
 
-    border-radius: 12px;
+        ),
 
-}
+        url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2000");
 
-h2 {
+    background-size:cover;
 
-    margin-bottom: 15px;
-
-}
-
-ul {
-
-    padding-left: 20px;
+    background-position:center;
 
 }
 
-footer {
+.hero-content{
 
-    text-align: center;
+    z-index:2;
 
-    padding: 30px;
+}
 
-    color: #777;
+.logo{
+
+    width:150px;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    font-size:5rem;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    color:#ccc;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:12px 25px;
+
+    background:#ffb400;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.card{
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+    padding:25px;
+
+    background:#181818;
+
+    border-radius:15px;
+
+}
+
+.card h2{
+
+    margin-bottom:15px;
+
+}
+
+.card ul{
+
+    padding-left:20px;
+
+}
+
+.news-item{
+
+    padding:15px;
+
+    background:#242424;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+}
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#888;
+
+}
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
 
 }
